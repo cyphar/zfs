@@ -222,6 +222,11 @@ kcf_init_mech_tabs(void)
 	    CRYPTO_MAX_MECH_NAME);
 	kcf_cipher_mechs_tab[8].me_threshold = kcf_rc4_threshold;
 
+	/* Not present in Solaris. */
+	(void) strncpy(kcf_cipher_mechs_tab[9].me_name,
+	    OPENZFS_CKM_CHACHA20_POLY1305, CRYPTO_MAX_MECH_NAME);
+	kcf_cipher_mechs_tab[9].me_threshold = kcf_chacha20_poly1305_threshold;
+
 
 	/* 4 HMACs */
 	(void) strncpy(kcf_mac_mechs_tab[0].me_name, SUN_CKM_MD5_HMAC,

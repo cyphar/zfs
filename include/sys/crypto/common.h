@@ -214,6 +214,9 @@ typedef uint32_t crypto_keysize_unit_t;
 #define	SUN_CKM_ECDSA_SHA1		"CKM_ECDSA_SHA1"
 #define	SUN_CKM_ECDSA			"CKM_ECDSA"
 
+/* Mechanisms not present in Solaris. */
+#define OPENZFS_CKM_CHACHA20_POLY1305	"CKM_CHACHA20_POLY1305"
+
 /* Shared operation context format for CKM_RC4 */
 typedef struct {
 #if defined(__amd64)

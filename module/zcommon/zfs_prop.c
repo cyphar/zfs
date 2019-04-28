@@ -131,6 +131,7 @@ zfs_prop_init(void)
 		{ "aes-128-gcm",	ZIO_CRYPT_AES_128_GCM },
 		{ "aes-192-gcm",	ZIO_CRYPT_AES_192_GCM },
 		{ "aes-256-gcm",	ZIO_CRYPT_AES_256_GCM },
+		{ "chacha20-poly1305",	ZIO_CRYPT_CHACHA20_POLY1305 },
 		{ NULL }
 	};
 
